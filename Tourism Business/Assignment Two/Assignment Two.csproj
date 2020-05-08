@@ -46,14 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewTour.Designer.cs">
+      <DependentUpon>FrmNewTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOther.Designer.cs">
+      <DependentUpon>FrmOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.Designer.cs">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTourItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTourItems.Designer.cs">
+      <DependentUpon>FrmTourItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicle.Designer.cs">
+      <DependentUpon>FrmVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewTour.resx">
+      <DependentUpon>FrmNewTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOther.resx">
+      <DependentUpon>FrmOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTourItems.resx">
+      <DependentUpon>FrmTourItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicle.resx">
+      <DependentUpon>FrmVehicle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

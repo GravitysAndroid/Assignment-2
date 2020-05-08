@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Assignment_Two
 {
-    public partial class Form1 : Form
+    public partial class FrmNewTour : Form
     {
-        public Form1()
+        public FrmNewTour()
         {
             InitializeComponent();
         }
