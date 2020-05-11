@@ -12,6 +12,7 @@ namespace Assignment_Two
 {
     public partial class FrmMain : Form
     {
+        private FrmNewTour _FrmNewTour = new FrmNewTour();
         public FrmMain()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-
+            _FrmNewTour.ShowDialog();
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)

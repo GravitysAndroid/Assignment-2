@@ -12,6 +12,7 @@ namespace Assignment_Two
 {
     public partial class FrmNewTour : Form
     {
+        private FrmTourItems _FrmTourItems = new FrmTourItems();
         public FrmNewTour()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Assignment_Two
 
         private void BtnItems_Click(object sender, EventArgs e)
         {
-
+            _FrmTourItems.ShowDialog();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
