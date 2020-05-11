@@ -149,6 +149,7 @@
             this.BtnOK.TabIndex = 12;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // BtnCancel
             // 
@@ -158,6 +159,7 @@
             this.BtnCancel.TabIndex = 13;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnItems
             // 
@@ -167,6 +169,7 @@
             this.BtnItems.TabIndex = 14;
             this.BtnItems.Text = "Configure Items";
             this.BtnItems.UseVisualStyleBackColor = true;
+            this.BtnItems.Click += new System.EventHandler(this.BtnItems_Click);
             // 
             // FrmNewTour
             // 

@@ -83,6 +83,7 @@
             this.BtnAdd.TabIndex = 4;
             this.BtnAdd.Text = "Add Item";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
             // 
@@ -92,6 +93,7 @@
             this.BtnEdit.TabIndex = 5;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
             // 
@@ -101,6 +103,7 @@
             this.BtnDelete.TabIndex = 6;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnCancel
             // 
@@ -110,6 +113,7 @@
             this.BtnCancel.TabIndex = 7;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnOK
             // 
@@ -119,6 +123,7 @@
             this.BtnOK.TabIndex = 8;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // LblTotal
             // 
@@ -145,7 +150,7 @@
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.LstItems);
             this.Name = "FrmTourItems";
-            this.Text = "FrmTourItems";
+            this.Text = "Tour Items";
             this.ResumeLayout(false);
             this.PerformLayout();
 

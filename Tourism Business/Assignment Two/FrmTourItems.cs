@@ -16,5 +16,30 @@ namespace Assignment_Two
         {
             InitializeComponent();
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

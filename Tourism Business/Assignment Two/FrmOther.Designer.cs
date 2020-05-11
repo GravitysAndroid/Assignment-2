@@ -76,6 +76,7 @@
             this.BtnOK.TabIndex = 4;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // BtnCancel
             // 
@@ -85,6 +86,7 @@
             this.BtnCancel.TabIndex = 5;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // FrmOther
             // 
@@ -98,7 +100,7 @@
             this.Controls.Add(this.LblCost);
             this.Controls.Add(this.LblDescription);
             this.Name = "FrmOther";
-            this.Text = "FrmOther";
+            this.Text = "Other";
             this.ResumeLayout(false);
             this.PerformLayout();
 

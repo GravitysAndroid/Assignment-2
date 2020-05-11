@@ -94,6 +94,7 @@
             this.BtnOK.TabIndex = 6;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // Cancel
             // 
@@ -103,6 +104,7 @@
             this.Cancel.TabIndex = 7;
             this.Cancel.Text = "Cancel";
             this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // FrmStaff
             // 
@@ -118,7 +120,7 @@
             this.Controls.Add(this.LblType);
             this.Controls.Add(this.LblName);
             this.Name = "FrmStaff";
-            this.Text = "FrmStaff";
+            this.Text = "Staff";
             this.ResumeLayout(false);
             this.PerformLayout();
 

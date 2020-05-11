@@ -76,6 +76,7 @@
             this.BtnOK.TabIndex = 4;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // BtnCancel
             // 
@@ -85,6 +86,7 @@
             this.BtnCancel.TabIndex = 5;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // FrmVehicle
             // 
@@ -98,7 +100,7 @@
             this.Controls.Add(this.LblCharge);
             this.Controls.Add(this.LblDetails);
             this.Name = "FrmVehicle";
-            this.Text = "FrmVehicle";
+            this.Text = "Vehicles";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -54,6 +54,7 @@
             this.BtnClose.TabIndex = 1;
             this.BtnClose.Text = "Close";
             this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // BtnAdd
             // 
@@ -63,6 +64,7 @@
             this.BtnAdd.TabIndex = 2;
             this.BtnAdd.Text = "Add New Tour";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
             // 
@@ -72,6 +74,7 @@
             this.BtnEdit.TabIndex = 3;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
             // 
@@ -81,6 +84,7 @@
             this.BtnDelete.TabIndex = 4;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // LblName
             // 
