@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Assignment_Two
 {
-    public partial class FrmVehicle : Form
+    public partial class FrmNewItem : Form
     {
-        public FrmVehicle()
+        public FrmNewItem()
         {
             InitializeComponent();
-        }
-
-        private void BtnOK_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

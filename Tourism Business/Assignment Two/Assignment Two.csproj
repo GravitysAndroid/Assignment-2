@@ -58,29 +58,17 @@
     <Compile Include="FrmNewTour.Designer.cs">
       <DependentUpon>FrmNewTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOther.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmOther.Designer.cs">
-      <DependentUpon>FrmOther.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmStaff.Designer.cs">
-      <DependentUpon>FrmStaff.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmTourItems.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTourItems.Designer.cs">
       <DependentUpon>FrmTourItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVehicle.cs">
+    <Compile Include="FrmNewItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVehicle.Designer.cs">
-      <DependentUpon>FrmVehicle.cs</DependentUpon>
+    <Compile Include="FrmNewItem.Designer.cs">
+      <DependentUpon>FrmNewItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,17 +78,11 @@
     <EmbeddedResource Include="FrmNewTour.resx">
       <DependentUpon>FrmNewTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOther.resx">
-      <DependentUpon>FrmOther.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmStaff.resx">
-      <DependentUpon>FrmStaff.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmTourItems.resx">
       <DependentUpon>FrmTourItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVehicle.resx">
-      <DependentUpon>FrmVehicle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmNewItem.resx">
+      <DependentUpon>FrmNewItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

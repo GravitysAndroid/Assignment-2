@@ -25,6 +25,7 @@ namespace Assignment_Two
 
         private void BtnItems_Click(object sender, EventArgs e)
         {
+            //FrmTourItem _FrmTourItems = new FrmTourItems();
             _FrmTourItems.ShowDialog();
         }
 

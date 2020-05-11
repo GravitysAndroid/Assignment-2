@@ -43,9 +43,18 @@
             // LstItems
             // 
             this.LstItems.FormattingEnabled = true;
+            this.LstItems.Items.AddRange(new object[] {
+            "Rope\t\t\tOther\t\t\t10",
+            "4x4\t\t\tVehicle\t\t\t500",
+            "Parachute\t\tOther\t\t\t100",
+            "John\t\t\tStaff\t\t\t1000",
+            "Lizzy\t\t\tStaff\t\t\t1200",
+            "Anton\t\t\tStaff\t\t\t1500",
+            "Rations\t\t\tOther\t\t\t500",
+            "Water\t\t\tOther\t\t\t150"});
             this.LstItems.Location = new System.Drawing.Point(12, 25);
             this.LstItems.Name = "LstItems";
-            this.LstItems.Size = new System.Drawing.Size(306, 212);
+            this.LstItems.Size = new System.Drawing.Size(349, 212);
             this.LstItems.TabIndex = 0;
             // 
             // LblName
@@ -60,7 +69,7 @@
             // LblType
             // 
             this.LblType.AutoSize = true;
-            this.LblType.Location = new System.Drawing.Point(146, 9);
+            this.LblType.Location = new System.Drawing.Point(157, 9);
             this.LblType.Name = "LblType";
             this.LblType.Size = new System.Drawing.Size(31, 13);
             this.LblType.TabIndex = 2;
@@ -69,7 +78,7 @@
             // LblCost
             // 
             this.LblCost.AutoSize = true;
-            this.LblCost.Location = new System.Drawing.Point(290, 9);
+            this.LblCost.Location = new System.Drawing.Point(300, 9);
             this.LblCost.Name = "LblCost";
             this.LblCost.Size = new System.Drawing.Size(28, 13);
             this.LblCost.TabIndex = 3;
@@ -87,7 +96,7 @@
             // 
             // BtnEdit
             // 
-            this.BtnEdit.Location = new System.Drawing.Point(127, 243);
+            this.BtnEdit.Location = new System.Drawing.Point(143, 243);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(75, 23);
             this.BtnEdit.TabIndex = 5;
@@ -97,7 +106,7 @@
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(243, 243);
+            this.BtnDelete.Location = new System.Drawing.Point(286, 243);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(75, 23);
             this.BtnDelete.TabIndex = 6;
@@ -107,7 +116,7 @@
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(243, 296);
+            this.BtnCancel.Location = new System.Drawing.Point(286, 296);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 23);
             this.BtnCancel.TabIndex = 7;
@@ -128,7 +137,7 @@
             // LblTotal
             // 
             this.LblTotal.AutoSize = true;
-            this.LblTotal.Location = new System.Drawing.Point(116, 301);
+            this.LblTotal.Location = new System.Drawing.Point(132, 301);
             this.LblTotal.Name = "LblTotal";
             this.LblTotal.Size = new System.Drawing.Size(86, 13);
             this.LblTotal.TabIndex = 9;
@@ -138,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 331);
+            this.ClientSize = new System.Drawing.Size(373, 331);
             this.Controls.Add(this.LblTotal);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.BtnCancel);

@@ -36,11 +36,18 @@
             this.LblName = new System.Windows.Forms.Label();
             this.LblStartDate = new System.Windows.Forms.Label();
             this.LblPrice = new System.Windows.Forms.Label();
+            this.LblID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstTours
             // 
             this.LstTours.FormattingEnabled = true;
+            this.LstTours.Items.AddRange(new object[] {
+            "1234567\t\tJames Joyce\t\t10/02/2020\t\t250",
+            "1234568\t\tKurt Vonnegut\t\t10/02/2020\t\t500",
+            "1234569\t\tDan Simmons\t\t10/02/2020\t\t700",
+            "1234566\t\tFrank Herbert\t\t10/02/2020\t\t100",
+            "1234565\t\tGene Wolfe\t\t10/02/2020\t\t450"});
             this.LstTours.Location = new System.Drawing.Point(12, 25);
             this.LstTours.Name = "LstTours";
             this.LstTours.Size = new System.Drawing.Size(480, 238);
@@ -89,7 +96,7 @@
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Location = new System.Drawing.Point(10, 9);
+            this.LblName.Location = new System.Drawing.Point(121, 9);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(35, 13);
             this.LblName.TabIndex = 5;
@@ -98,7 +105,7 @@
             // LblStartDate
             // 
             this.LblStartDate.AutoSize = true;
-            this.LblStartDate.Location = new System.Drawing.Point(191, 9);
+            this.LblStartDate.Location = new System.Drawing.Point(257, 9);
             this.LblStartDate.Name = "LblStartDate";
             this.LblStartDate.Size = new System.Drawing.Size(55, 13);
             this.LblStartDate.TabIndex = 6;
@@ -107,17 +114,27 @@
             // LblPrice
             // 
             this.LblPrice.AutoSize = true;
-            this.LblPrice.Location = new System.Drawing.Point(383, 9);
+            this.LblPrice.Location = new System.Drawing.Point(358, 9);
             this.LblPrice.Name = "LblPrice";
             this.LblPrice.Size = new System.Drawing.Size(109, 13);
             this.LblPrice.TabIndex = 7;
             this.LblPrice.Text = "Price (Per Passenger)";
+            // 
+            // LblID
+            // 
+            this.LblID.AutoSize = true;
+            this.LblID.Location = new System.Drawing.Point(25, 9);
+            this.LblID.Name = "LblID";
+            this.LblID.Size = new System.Drawing.Size(18, 13);
+            this.LblID.TabIndex = 8;
+            this.LblID.Text = "ID";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 301);
+            this.Controls.Add(this.LblID);
             this.Controls.Add(this.LblPrice);
             this.Controls.Add(this.LblStartDate);
             this.Controls.Add(this.LblName);
@@ -143,6 +160,7 @@
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label LblStartDate;
         private System.Windows.Forms.Label LblPrice;
+        private System.Windows.Forms.Label LblID;
     }
 }
 

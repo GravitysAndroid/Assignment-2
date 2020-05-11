@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Assignment_Two
 {
+    private FrmNewItem _FrmNewItem = new FrmNewItem();
     public partial class FrmTourItems : Form
     {
+
         public FrmTourItems()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-
+            _FrmNewItem.ShowDialog();
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
