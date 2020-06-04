@@ -55,11 +55,11 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNewTour.cs">
+    <Compile Include="FrmTour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNewTour.Designer.cs">
-      <DependentUpon>FrmNewTour.cs</DependentUpon>
+    <Compile Include="FrmTour.Designer.cs">
+      <DependentUpon>FrmTour.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTourItems.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewTour.resx">
-      <DependentUpon>FrmNewTour.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTour.resx">
+      <DependentUpon>FrmTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTourItems.resx">
       <DependentUpon>FrmTourItems.cs</DependentUpon>

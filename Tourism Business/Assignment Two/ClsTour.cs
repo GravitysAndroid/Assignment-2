@@ -60,13 +60,13 @@ namespace Assignment_Two
             set { _markUp = value; }
         }
 
-        public static ClsTour NewTour(int prChoice)
-        {
-            if (prChoice == 0)
-                return new ClsMOEStudent();
-            else
-                return new ClsInternationalStudent();
-        }
+        //public static ClsTour NewTour(int prChoice)
+        //{
+        //    if (prChoice == 0)
+        //        return new ClsMOEStudent();
+        //    else
+        //        return new ClsInternationalStudent();
+        //}
 
         public String ToString()
         {
@@ -76,8 +76,8 @@ namespace Assignment_Two
         public Decimal CalculatePricePassenger()
         {
             decimal lcTotal = 0;
-            foreach (ClsTour lcCost in TourList.Values)
-                lcTotal += lcCost.Balance;
+            //foreach (ClsTour lcCost in TourList.Values)
+            //    lcTotal += lcCost.Balance;
             return lcTotal;
         }
 

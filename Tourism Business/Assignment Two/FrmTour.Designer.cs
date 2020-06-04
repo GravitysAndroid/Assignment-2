@@ -1,6 +1,6 @@
 ﻿namespace Assignment_Two
 {
-    partial class FrmNewTour
+    partial class FrmTour
     {
         /// <summary>
         /// Required designer variable.

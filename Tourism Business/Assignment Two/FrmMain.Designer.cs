@@ -42,12 +42,6 @@
             // LstTours
             // 
             this.LstTours.FormattingEnabled = true;
-            this.LstTours.Items.AddRange(new object[] {
-            "1234567\t\tJames Joyce\t\t10/02/2020\t\t250",
-            "1234568\t\tKurt Vonnegut\t\t10/02/2020\t\t500",
-            "1234569\t\tDan Simmons\t\t10/02/2020\t\t700",
-            "1234566\t\tFrank Herbert\t\t10/02/2020\t\t100",
-            "1234565\t\tGene Wolfe\t\t10/02/2020\t\t450"});
             this.LstTours.Location = new System.Drawing.Point(12, 25);
             this.LstTours.Name = "LstTours";
             this.LstTours.Size = new System.Drawing.Size(480, 238);

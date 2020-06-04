@@ -12,7 +12,7 @@ namespace Assignment_Two
 {
     public partial class FrmMain : Form
     {
-        private FrmNewTour _FrmNewTour = new FrmNewTour();
+        private FrmTour _FrmNewTour = new FrmTour();
         public FrmMain()
         {
             InitializeComponent();
@@ -20,7 +20,20 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            _FrmNewTour.ShowDialog();
+            ClsTour lcTour = new ClsTour();
+
+            if (_FrmNewTour.ShowDialog(_lcTour) == DialogResult.OK)
+            {
+                ClsCompanyData.TourList.Add(lcTour.Code, lcTour);
+                UpdateDisplay();
+            }
+            
+        }
+
+        private void UpdateDisplay()
+        {
+            LstTours.DataSource = null;
+            LstTours.DataSource = ClsCompanyData.TourList.Values.ToList<ClsTour>();
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)

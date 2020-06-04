@@ -19,24 +19,22 @@ namespace Assignment_Two
             get => _TourList; /*set => _TourList = value;*/
         }
 
-        public void Save()
-        {
-            using (FileStream lcFileStream = new FileStream(fileName, FileMode.Create))
-            {
-                BinaryFormatter lcFormatter = new BinaryFormatter();
-                lcFormatter.Serialize(lcFileStream, _TourList);
-            }
-        }
-        public void Retreive()
-        {
-            using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
-            {
-                BinaryFormatter lcFormatter = new BinaryFormatter();
-                _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
-            }
-        }
-
-        private System.Collections.Generic.List<ClsTour> _TourList;
+        //public void Save()
+        //{
+        //    using (FileStream lcFileStream = new FileStream(fileName, FileMode.Create))
+        //    {
+        //        BinaryFormatter lcFormatter = new BinaryFormatter();
+        //        lcFormatter.Serialize(lcFileStream, _TourList);
+        //    }
+        //}
+        //public void Retreive()
+        //{
+        //    using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
+        //    {
+        //        BinaryFormatter lcFormatter = new BinaryFormatter();
+        //        _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
+        //    }
+        //}
 
     }
 }

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Assignment_Two
 {
-    public partial class FrmNewTour : Form
+    public partial class FrmTour : Form
     {
         private FrmTourItems _FrmTourItems = new FrmTourItems();
-        public FrmNewTour()
+        public FrmTour()
         {
             InitializeComponent();
         }
