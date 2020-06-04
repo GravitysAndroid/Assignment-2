@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace Assignment_Two
 {
-    public class ClsCost
+    public abstract class ClsCost
     {
-    //    public static ClsCost NewCost(int prChoice)
-    //    {
-    //        if (prChoice == 0)
-    //            return new ClsStaff();
-    //        else if( prChoice == 1)
-    //            return new ClsOther();
-    //        else
-    //            return new ClsVehicle();
-    //    }
+        public abstract bool ViewEdit();
+        //    public static ClsCost NewCost(int prChoice)
+        //    {
+        //        if (prChoice == 0)
+        //            return new ClsStaff();
+        //        else if( prChoice == 1)
+        //            return new ClsOther();
+        //        else
+        //            return new ClsVehicle();
+        //    }
 
-    //    public abstract bool ViewEdit();
+        //    public abstract bool ViewEdit();
 
-    //    protected abstract string TypeOfStudent();
+        //    protected abstract string TypeOfStudent();
     }
 }

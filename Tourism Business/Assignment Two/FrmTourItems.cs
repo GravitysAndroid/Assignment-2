@@ -12,7 +12,7 @@ namespace Assignment_Two
 {
     public partial class FrmTourItems : Form
     {
-    private FrmNewItem _FrmNewItem = new FrmNewItem();
+    private FrmItem _FrmNewItem = new FrmItem();
 
         public FrmTourItems()
         {

@@ -139,6 +139,7 @@
             this.Controls.Add(this.LstTours);
             this.Name = "FrmMain";
             this.Text = "Tourism \'R\' Us";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

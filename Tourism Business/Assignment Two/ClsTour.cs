@@ -5,12 +5,23 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Assignment_Two
 {
     [Serializable]
     public class ClsTour
     {
+        private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
+        private static FrmTour _TourForm = new FrmTour();
+        private ClsTour _Tour;
+        private System.Collections.Generic.List<ClsCost> ClsCost;
+
+        public static Dictionary<string, ClsTour> TourList
+        {
+            get => _TourList; /*set => _TourList = value;*/
+        }
+
         private String _code;
         public String Code
         {
@@ -60,34 +71,28 @@ namespace Assignment_Two
             set { _markUp = value; }
         }
 
-        //public static ClsTour NewTour(int prChoice)
+        public static ClsTour NewTour()
+        {
+            if ()
+                return new ClsTour();
+        }
+
+        public bool ViewEdit()
+        {
+            return _TourForm.ShowDialog();
+        }
+
+        public override String ToString()
+        {
+            return _code + "\t" + _name + "\t" + _startDate + "\t" + _endDate + "\t" + _maxPax + "\t" + _distance + "\t" + "\t" + _markUp;
+        }
+
+        //public Decimal CalculatePricePassenger()
         //{
-        //    if (prChoice == 0)
-        //        return new ClsMOEStudent();
-        //    else
-        //        return new ClsInternationalStudent();
+        //    decimal lcTourTotal = 0;
+        //    foreach (ClsTour lcCost in TourList.Values)
+        //        lcTotal += lcCost.Balance;
+        //    return lcTourTotal;
         //}
-
-        public String ToString()
-        {
-            throw new System.Exception("Not implemented");
-        }
-
-        public Decimal CalculatePricePassenger()
-        {
-            decimal lcTotal = 0;
-            //foreach (ClsTour lcCost in TourList.Values)
-            //    lcTotal += lcCost.Balance;
-            return lcTotal;
-        }
-
-        public void ViewEdit()
-        {
-            throw new System.Exception("Not implemented");
-        }
-
-        private System.Collections.Generic.List<ClsCost> clsCost;
-
-
     }
 }

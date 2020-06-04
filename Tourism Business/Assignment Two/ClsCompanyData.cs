@@ -14,27 +14,28 @@ namespace Assignment_Two
         private static string fileName = "BusinessStorage";
         private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
 
+
         public static Dictionary<string, ClsTour> TourList
         {
             get => _TourList; /*set => _TourList = value;*/
         }
 
-        //public void Save()
-        //{
-        //    using (FileStream lcFileStream = new FileStream(fileName, FileMode.Create))
-        //    {
-        //        BinaryFormatter lcFormatter = new BinaryFormatter();
-        //        lcFormatter.Serialize(lcFileStream, _TourList);
-        //    }
-        //}
-        //public void Retreive()
-        //{
-        //    using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
-        //    {
-        //        BinaryFormatter lcFormatter = new BinaryFormatter();
-        //        _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
-        //    }
-        //}
+        public void Save()
+        {
+            using (FileStream lcFileStream = new FileStream(fileName, FileMode.Create))
+            {
+                BinaryFormatter lcFormatter = new BinaryFormatter();
+                lcFormatter.Serialize(lcFileStream, _TourList);
+            }
+        }
+        public void Retreive()
+        {
+            using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
+            {
+                BinaryFormatter lcFormatter = new BinaryFormatter();
+                _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
+            }
+        }
 
     }
 }

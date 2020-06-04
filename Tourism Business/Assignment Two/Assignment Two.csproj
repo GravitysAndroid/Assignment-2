@@ -67,11 +67,11 @@
     <Compile Include="FrmTourItems.Designer.cs">
       <DependentUpon>FrmTourItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNewItem.cs">
+    <Compile Include="FrmItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNewItem.Designer.cs">
-      <DependentUpon>FrmNewItem.cs</DependentUpon>
+    <Compile Include="FrmItem.Designer.cs">
+      <DependentUpon>FrmItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="FrmTourItems.resx">
       <DependentUpon>FrmTourItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewItem.resx">
-      <DependentUpon>FrmNewItem.cs</DependentUpon>
+    <EmbeddedResource Include="FrmItem.resx">
+      <DependentUpon>FrmItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

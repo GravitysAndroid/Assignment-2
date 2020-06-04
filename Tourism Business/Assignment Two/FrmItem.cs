@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Assignment_Two
 {
-    public partial class FrmNewItem : Form
+    public partial class FrmItem : Form
     {
-        public FrmNewItem()
+        public FrmItem()
         {
             InitializeComponent();
         }

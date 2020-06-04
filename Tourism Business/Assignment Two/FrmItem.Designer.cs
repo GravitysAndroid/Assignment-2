@@ -1,6 +1,6 @@
 ﻿namespace Assignment_Two
 {
-    partial class FrmNewItem
+    partial class FrmItem
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CboItem = new System.Windows.Forms.ComboBox();
-            this.LblItemType = new System.Windows.Forms.Label();
             this.LblName = new System.Windows.Forms.Label();
             this.LblCost = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,27 +35,6 @@
             this.BtnOK = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // CboItem
-            // 
-            this.CboItem.FormattingEnabled = true;
-            this.CboItem.Items.AddRange(new object[] {
-            "Vehicle",
-            "Staff",
-            "Other"});
-            this.CboItem.Location = new System.Drawing.Point(84, 38);
-            this.CboItem.Name = "CboItem";
-            this.CboItem.Size = new System.Drawing.Size(121, 21);
-            this.CboItem.TabIndex = 0;
-            // 
-            // LblItemType
-            // 
-            this.LblItemType.AutoSize = true;
-            this.LblItemType.Location = new System.Drawing.Point(13, 41);
-            this.LblItemType.Name = "LblItemType";
-            this.LblItemType.Size = new System.Drawing.Size(66, 13);
-            this.LblItemType.TabIndex = 1;
-            this.LblItemType.Text = "Type of Item";
             // 
             // LblName
             // 
@@ -71,7 +48,7 @@
             // LblCost
             // 
             this.LblCost.AutoSize = true;
-            this.LblCost.Location = new System.Drawing.Point(12, 68);
+            this.LblCost.Location = new System.Drawing.Point(12, 41);
             this.LblCost.Name = "LblCost";
             this.LblCost.Size = new System.Drawing.Size(28, 13);
             this.LblCost.TabIndex = 3;
@@ -86,7 +63,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 65);
+            this.textBox2.Location = new System.Drawing.Point(84, 38);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
@@ -121,8 +98,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.LblCost);
             this.Controls.Add(this.LblName);
-            this.Controls.Add(this.LblItemType);
-            this.Controls.Add(this.CboItem);
             this.Name = "FrmNewItem";
             this.Text = "New Item";
             this.ResumeLayout(false);
@@ -131,9 +106,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox CboItem;
-        private System.Windows.Forms.Label LblItemType;
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label LblCost;
         private System.Windows.Forms.TextBox textBox1;

@@ -12,22 +12,37 @@ namespace Assignment_Two
 {
     public partial class FrmMain : Form
     {
+        private ClsTour _Tour;
         private FrmTour _FrmNewTour = new FrmTour();
         public FrmMain()
         {
+            try
+            {
+                //ClsCompanyData.Retreive();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.GetBaseException().Message);
+            }
             InitializeComponent();
+        }
+        private void EditStudent(ClsTour prTour)
+        {
+            if (prTour != null && prTour.ViewEdit())
+            {
+                _Tour = prTour;
+            }
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             ClsTour lcTour = new ClsTour();
-
-            if (_FrmNewTour.ShowDialog(_lcTour) == DialogResult.OK)
+            if (lcTour != null && lcTour.ViewEdit())
             {
                 ClsCompanyData.TourList.Add(lcTour.Code, lcTour);
                 UpdateDisplay();
             }
-            
         }
 
         private void UpdateDisplay()
@@ -38,7 +53,11 @@ namespace Assignment_Two
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-
+            ClsTour lcTour = (ClsTour)LstTours.SelectedValue;
+            if (lcTour != null && lcTour.ViewEdit())
+            {
+                UpdateDisplay();
+            }
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -48,7 +67,20 @@ namespace Assignment_Two
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            Close();
+            try
+            {
+                //ClsCompanyData.Save();
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.GetBaseException().Message);
+            }
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            UpdateDisplay();
         }
     }
 }
