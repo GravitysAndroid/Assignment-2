@@ -50,14 +50,14 @@ namespace Assignment_Two
             set { _endDate = value; }
         }
 
-        private int _maxPax;
+        private int _maxPax = 1;
         public int MaxPax
         {
             get { return _maxPax; }
             set { _maxPax = value; }
         }
 
-        private int _distance;
+        private int _distance = 1;
         public int Distance
         {
             get { return _distance; }
@@ -73,18 +73,17 @@ namespace Assignment_Two
 
         public static ClsTour NewTour()
         {
-            if ()
-                return new ClsTour();
+            return new ClsTour();
         }
 
         public bool ViewEdit()
         {
-            return _TourForm.ShowDialog();
+            return _TourForm.ShowDialog(this) == DialogResult.OK;
         }
 
         public override String ToString()
         {
-            return _code + "\t" + _name + "\t" + _startDate + "\t" + _endDate + "\t" + _maxPax + "\t" + _distance + "\t" + "\t" + _markUp;
+            return _code + "\t" + _name + "\t" + _startDate.ToShortDateString() + "\t" + _maxPax + "\t\t" + _distance;
         }
 
         //public Decimal CalculatePricePassenger()

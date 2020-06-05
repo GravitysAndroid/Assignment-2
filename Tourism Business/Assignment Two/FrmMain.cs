@@ -53,7 +53,7 @@ namespace Assignment_Two
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            ClsTour lcTour = (ClsTour)LstTours.SelectedValue;
+            ClsTour lcTour = (ClsTour)LstTours.SelectedItem;
             if (lcTour != null && lcTour.ViewEdit())
             {
                 UpdateDisplay();
@@ -62,6 +62,7 @@ namespace Assignment_Two
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
+            ClsTour lcTour = (ClsTour)LstTours.SelectedValue;
 
         }
 
