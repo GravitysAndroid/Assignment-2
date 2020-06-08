@@ -27,7 +27,7 @@ namespace Assignment_Two
             }
             InitializeComponent();
         }
-        private void EditStudent(ClsTour prTour)
+        private void EditTour(ClsTour prTour)
         {
             if (prTour != null && prTour.ViewEdit())
             {

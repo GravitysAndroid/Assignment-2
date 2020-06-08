@@ -36,9 +36,6 @@ namespace Assignment_Two
             DtpStart.Value = _Tour.StartDate;
             NumPassMax.Value = _Tour.MaxPax;
             NumMarkUp.Value = _Tour.MarkUp;
-
-
-
         }
 
         private void BtnOK_Click(object sender, EventArgs e)
