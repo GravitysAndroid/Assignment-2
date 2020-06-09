@@ -96,6 +96,12 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmOther.resx">
+      <DependentUpon>FrmOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTour.resx">
       <DependentUpon>FrmTour.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmItem.resx">
       <DependentUpon>FrmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicle.resx">
+      <DependentUpon>FrmVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

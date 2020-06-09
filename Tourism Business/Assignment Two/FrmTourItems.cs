@@ -12,7 +12,10 @@ namespace Assignment_Two
 {
     public partial class FrmTourItems : Form
     {
-    private FrmItem _FrmNewItem = new FrmItem();
+        private FrmStaff _FrmStaff = new FrmStaff();
+        private FrmVehicle _FrmVehicle = new FrmVehicle();
+        private FrmOther _FrmOther = new FrmOther();
+        private ClsCost _Cost;
 
         public FrmTourItems()
         {
@@ -21,10 +24,28 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            _FrmNewItem.ShowDialog();
+            _FrmStaff.ShowDialog();
         }
 
-        private void BtnEdit_Click(object sender, EventArgs e)
+        private void BtnAddVehicle_Click(object sender, EventArgs e)
+        {
+            _FrmVehicle.ShowDialog();
+        }
+
+        private void BtnAddOther_Click(object sender, EventArgs e)
+        {
+            _FrmOther.ShowDialog();
+        }
+
+        private void EditTour(ClsCost prCost)
+        {
+            if (prCost != null && prCost.ViewEdit())
+            {
+                _Cost = prCost;
+            }
+        }
+
+            private void BtnEdit_Click(object sender, EventArgs e)
         {
 
         }
@@ -41,7 +62,9 @@ namespace Assignment_Two
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult = DialogResult.Cancel;
         }
+
+        
     }
 }

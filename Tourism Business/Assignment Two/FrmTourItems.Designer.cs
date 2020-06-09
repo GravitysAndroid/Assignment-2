@@ -32,12 +32,14 @@
             this.LblName = new System.Windows.Forms.Label();
             this.LblType = new System.Windows.Forms.Label();
             this.LblCost = new System.Windows.Forms.Label();
-            this.BtnAdd = new System.Windows.Forms.Button();
+            this.BtnAddStaff = new System.Windows.Forms.Button();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnOK = new System.Windows.Forms.Button();
             this.LblTotal = new System.Windows.Forms.Label();
+            this.BtnAddVehicle = new System.Windows.Forms.Button();
+            this.BtnAddOther = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LstItems
@@ -84,19 +86,19 @@
             this.LblCost.TabIndex = 3;
             this.LblCost.Text = "Cost";
             // 
-            // BtnAdd
+            // BtnAddStaff
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(12, 243);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(75, 23);
-            this.BtnAdd.TabIndex = 4;
-            this.BtnAdd.Text = "Add Item";
-            this.BtnAdd.UseVisualStyleBackColor = true;
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
+            this.BtnAddStaff.Location = new System.Drawing.Point(93, 238);
+            this.BtnAddStaff.Name = "BtnAddStaff";
+            this.BtnAddStaff.Size = new System.Drawing.Size(75, 23);
+            this.BtnAddStaff.TabIndex = 4;
+            this.BtnAddStaff.Text = "Add Staff";
+            this.BtnAddStaff.UseVisualStyleBackColor = true;
+            this.BtnAddStaff.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
             // 
-            this.BtnEdit.Location = new System.Drawing.Point(143, 243);
+            this.BtnEdit.Location = new System.Drawing.Point(12, 267);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(75, 23);
             this.BtnEdit.TabIndex = 5;
@@ -106,7 +108,7 @@
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(286, 243);
+            this.BtnDelete.Location = new System.Drawing.Point(286, 267);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(75, 23);
             this.BtnDelete.TabIndex = 6;
@@ -137,23 +139,45 @@
             // LblTotal
             // 
             this.LblTotal.AutoSize = true;
-            this.LblTotal.Location = new System.Drawing.Point(132, 301);
+            this.LblTotal.Location = new System.Drawing.Point(186, 243);
             this.LblTotal.Name = "LblTotal";
             this.LblTotal.Size = new System.Drawing.Size(86, 13);
             this.LblTotal.TabIndex = 9;
             this.LblTotal.Text = "Total Items Cost:";
+            // 
+            // BtnAddVehicle
+            // 
+            this.BtnAddVehicle.Location = new System.Drawing.Point(93, 267);
+            this.BtnAddVehicle.Name = "BtnAddVehicle";
+            this.BtnAddVehicle.Size = new System.Drawing.Size(75, 23);
+            this.BtnAddVehicle.TabIndex = 10;
+            this.BtnAddVehicle.Text = "Add Vehicle";
+            this.BtnAddVehicle.UseVisualStyleBackColor = true;
+            this.BtnAddVehicle.Click += new System.EventHandler(this.BtnAddVehicle_Click);
+            // 
+            // BtnAddOther
+            // 
+            this.BtnAddOther.Location = new System.Drawing.Point(93, 296);
+            this.BtnAddOther.Name = "BtnAddOther";
+            this.BtnAddOther.Size = new System.Drawing.Size(75, 23);
+            this.BtnAddOther.TabIndex = 11;
+            this.BtnAddOther.Text = "Add Other";
+            this.BtnAddOther.UseVisualStyleBackColor = true;
+            this.BtnAddOther.Click += new System.EventHandler(this.BtnAddOther_Click);
             // 
             // FrmTourItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 331);
+            this.Controls.Add(this.BtnAddOther);
+            this.Controls.Add(this.BtnAddVehicle);
             this.Controls.Add(this.LblTotal);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnEdit);
-            this.Controls.Add(this.BtnAdd);
+            this.Controls.Add(this.BtnAddStaff);
             this.Controls.Add(this.LblCost);
             this.Controls.Add(this.LblType);
             this.Controls.Add(this.LblName);
@@ -171,11 +195,13 @@
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label LblType;
         private System.Windows.Forms.Label LblCost;
-        private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.Button BtnAddStaff;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnOK;
         private System.Windows.Forms.Label LblTotal;
+        private System.Windows.Forms.Button BtnAddVehicle;
+        private System.Windows.Forms.Button BtnAddOther;
     }
 }
