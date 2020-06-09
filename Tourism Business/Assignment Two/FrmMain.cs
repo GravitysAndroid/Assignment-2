@@ -71,7 +71,7 @@ namespace Assignment_Two
             try
             {
                 //ClsCompanyData.Save();
-                Close();
+                DialogResult = DialogResult.Cancel;
             }
             catch (Exception ex)
             {

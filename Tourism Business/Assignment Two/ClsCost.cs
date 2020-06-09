@@ -9,18 +9,18 @@ namespace Assignment_Two
     public abstract class ClsCost
     {
         public abstract bool ViewEdit();
-        //    public static ClsCost NewCost(int prChoice)
-        //    {
-        //        if (prChoice == 0)
-        //            return new ClsStaff();
-        //        else if( prChoice == 1)
-        //            return new ClsOther();
-        //        else
-        //            return new ClsVehicle();
-        //    }
+        //public static ClsCost NewCost(int prChoice)
+        //{
+        //    if (prChoice == 0)
+        //        return new ClsStaff();
+        //    else if (prChoice == 1)
+        //        return new ClsOther();
+        //    else
+        //        return new ClsVehicle();
+        //}
 
-        //    public abstract bool ViewEdit();
+        //public abstract bool ViewEdit();
 
-        //    protected abstract string TypeOfStudent();
+        protected abstract string TypeOfCost();
     }
 }
