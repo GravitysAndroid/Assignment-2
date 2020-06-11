@@ -9,25 +9,25 @@ namespace Assignment_Two
     class ClsOther
     {
         private static FrmOther _OtherForm = new FrmOther();
-        public override bool ViewEdit()
-        {
-            return _OtherForm.ShowDialog(this);
+        //public override bool ViewEdit()
+        //{
+        //    return _OtherForm.ShowDialog(this);
 
-        }
+        //}
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        //public override string ToString()
+        //{
+        //    return base.ToString();
+        //}
 
-        public override decimal CalculateCost()
-        {
+        //public override decimal CalculateCost()
+        //{
             
-        }
+        //}
 
-        protected override string TypeOfCost()
-        {
-            return "Other";
-        }
+        //protected override string TypeOfCost()
+        //{
+        //    return "Other";
+        //}
     }
 }

@@ -20,6 +20,8 @@ namespace Assignment_Two
         public FrmTourItems()
         {
             InitializeComponent();
+            CboCostType.DataSource = ClsCost._TypeOfCost;
+            CboCostType.SelectedIndex = 0;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)

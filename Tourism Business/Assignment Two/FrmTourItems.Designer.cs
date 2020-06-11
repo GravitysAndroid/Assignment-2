@@ -32,14 +32,13 @@
             this.LblName = new System.Windows.Forms.Label();
             this.LblType = new System.Windows.Forms.Label();
             this.LblCost = new System.Windows.Forms.Label();
-            this.BtnAddStaff = new System.Windows.Forms.Button();
+            this.BtnAddCost = new System.Windows.Forms.Button();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnOK = new System.Windows.Forms.Button();
             this.LblTotal = new System.Windows.Forms.Label();
-            this.BtnAddVehicle = new System.Windows.Forms.Button();
-            this.BtnAddOther = new System.Windows.Forms.Button();
+            this.CboCostType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // LstItems
@@ -77,19 +76,19 @@
             this.LblCost.TabIndex = 3;
             this.LblCost.Text = "Cost";
             // 
-            // BtnAddStaff
+            // BtnAddCost
             // 
-            this.BtnAddStaff.Location = new System.Drawing.Point(93, 238);
-            this.BtnAddStaff.Name = "BtnAddStaff";
-            this.BtnAddStaff.Size = new System.Drawing.Size(75, 23);
-            this.BtnAddStaff.TabIndex = 4;
-            this.BtnAddStaff.Text = "Add Staff";
-            this.BtnAddStaff.UseVisualStyleBackColor = true;
-            this.BtnAddStaff.Click += new System.EventHandler(this.BtnAdd_Click);
+            this.BtnAddCost.Location = new System.Drawing.Point(12, 267);
+            this.BtnAddCost.Name = "BtnAddCost";
+            this.BtnAddCost.Size = new System.Drawing.Size(75, 23);
+            this.BtnAddCost.TabIndex = 4;
+            this.BtnAddCost.Text = "Add Cost";
+            this.BtnAddCost.UseVisualStyleBackColor = true;
+            this.BtnAddCost.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
             // 
-            this.BtnEdit.Location = new System.Drawing.Point(12, 267);
+            this.BtnEdit.Location = new System.Drawing.Point(12, 243);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(75, 23);
             this.BtnEdit.TabIndex = 5;
@@ -136,39 +135,26 @@
             this.LblTotal.TabIndex = 9;
             this.LblTotal.Text = "Total Items Cost:";
             // 
-            // BtnAddVehicle
+            // CboCostType
             // 
-            this.BtnAddVehicle.Location = new System.Drawing.Point(93, 267);
-            this.BtnAddVehicle.Name = "BtnAddVehicle";
-            this.BtnAddVehicle.Size = new System.Drawing.Size(75, 23);
-            this.BtnAddVehicle.TabIndex = 10;
-            this.BtnAddVehicle.Text = "Add Vehicle";
-            this.BtnAddVehicle.UseVisualStyleBackColor = true;
-            this.BtnAddVehicle.Click += new System.EventHandler(this.BtnAddVehicle_Click);
-            // 
-            // BtnAddOther
-            // 
-            this.BtnAddOther.Location = new System.Drawing.Point(93, 296);
-            this.BtnAddOther.Name = "BtnAddOther";
-            this.BtnAddOther.Size = new System.Drawing.Size(75, 23);
-            this.BtnAddOther.TabIndex = 11;
-            this.BtnAddOther.Text = "Add Other";
-            this.BtnAddOther.UseVisualStyleBackColor = true;
-            this.BtnAddOther.Click += new System.EventHandler(this.BtnAddOther_Click);
+            this.CboCostType.FormattingEnabled = true;
+            this.CboCostType.Location = new System.Drawing.Point(93, 269);
+            this.CboCostType.Name = "CboCostType";
+            this.CboCostType.Size = new System.Drawing.Size(121, 21);
+            this.CboCostType.TabIndex = 10;
             // 
             // FrmTourItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 331);
-            this.Controls.Add(this.BtnAddOther);
-            this.Controls.Add(this.BtnAddVehicle);
+            this.Controls.Add(this.CboCostType);
             this.Controls.Add(this.LblTotal);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnEdit);
-            this.Controls.Add(this.BtnAddStaff);
+            this.Controls.Add(this.BtnAddCost);
             this.Controls.Add(this.LblCost);
             this.Controls.Add(this.LblType);
             this.Controls.Add(this.LblName);
@@ -186,13 +172,12 @@
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label LblType;
         private System.Windows.Forms.Label LblCost;
-        private System.Windows.Forms.Button BtnAddStaff;
+        private System.Windows.Forms.Button BtnAddCost;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnOK;
         private System.Windows.Forms.Label LblTotal;
-        private System.Windows.Forms.Button BtnAddVehicle;
-        private System.Windows.Forms.Button BtnAddOther;
+        private System.Windows.Forms.ComboBox CboCostType;
     }
 }

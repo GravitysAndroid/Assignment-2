@@ -35,14 +35,14 @@ namespace Assignment_Two
 
         protected abstract decimal CalculateCost();
 
-        protected static NewCost(int prChoice)
-        {
-            if (prChoice == 0)
-                return new ClsStaff();
-            else if (prChoice == 1)
-                return new ClsVehicle();
-            else
-                return new ClsOther();
-        }
+        //protected static ClsCost NewCost(int prChoice)
+        //{
+        //    if (prChoice == 0)
+        //        return new ClsStaff();
+        //    else if (prChoice == 1)
+        //        return new ClsVehicle();
+        //    else
+        //        return new ClsOther();
+        //}
     }
 }
