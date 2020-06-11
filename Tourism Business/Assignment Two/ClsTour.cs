@@ -86,12 +86,12 @@ namespace Assignment_Two
             return _code + "\t" + _name + "\t" + _startDate.ToShortDateString() + "\t" + _maxPax + "\t\t" + _distance;
         }
 
-        //public Decimal CalculatePricePassenger()
-        //{
-        //    decimal lcTourTotal = 0;
-        //    foreach (ClsTour lcCost in TourList.Values)
-        //        lcTotal += lcCost.Balance;
-        //    return lcTourTotal;
-        //}
+        public Decimal CalculateTourCost()
+        {
+            //decimal lcTourTotal = 0;
+            //foreach (ClsTour lcCost in TourList.Values)
+            //    lcTotal += lcCost.Balance;
+            //return lcTourTotal;
+        }
     }
 }

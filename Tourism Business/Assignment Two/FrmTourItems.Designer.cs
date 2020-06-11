@@ -45,15 +45,6 @@
             // LstItems
             // 
             this.LstItems.FormattingEnabled = true;
-            this.LstItems.Items.AddRange(new object[] {
-            "Rope\t\t\tOther\t\t\t10",
-            "4x4\t\t\tVehicle\t\t\t500",
-            "Parachute\t\tOther\t\t\t100",
-            "John\t\t\tStaff\t\t\t1000",
-            "Lizzy\t\t\tStaff\t\t\t1200",
-            "Anton\t\t\tStaff\t\t\t1500",
-            "Rations\t\t\tOther\t\t\t500",
-            "Water\t\t\tOther\t\t\t150"});
             this.LstItems.Location = new System.Drawing.Point(12, 25);
             this.LstItems.Name = "LstItems";
             this.LstItems.Size = new System.Drawing.Size(349, 212);

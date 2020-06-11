@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="ClsCompanyData.cs" />
     <Compile Include="ClsCost.cs" />
+    <Compile Include="ClsOther.cs" />
+    <Compile Include="ClsStaff.cs" />
     <Compile Include="ClsTour.cs" />
+    <Compile Include="ClsVehicle.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
