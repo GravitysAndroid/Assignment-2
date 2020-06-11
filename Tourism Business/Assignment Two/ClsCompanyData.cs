@@ -36,6 +36,5 @@ namespace Assignment_Two
                 _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
             }
         }
-
     }
 }

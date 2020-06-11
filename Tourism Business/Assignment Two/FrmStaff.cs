@@ -16,5 +16,20 @@ namespace Assignment_Two
         {
             InitializeComponent();
         }
+
+        protected override void UpdateDisplay()
+        {
+            base.UpdateDisplay();
+            ClsStaff lcStaff = (ClsStaff) _CostClass;
+            TxtStaffRole.Text = _StaffRole;
+        }
+
+        protected override void PushData()
+        {
+            base.PushData();
+            ClsMOEStudent lcStudent = (ClsMOEStudent)_Student;
+            lcStudent.LoanAmount = Convert.ToDecimal(TxtLoan.Text);
+            lcStudent.FullTime = ChkFullTime.Checked;
+        }
     }
 }

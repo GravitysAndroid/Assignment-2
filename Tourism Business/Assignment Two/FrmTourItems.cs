@@ -26,7 +26,13 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            _FrmStaff.ShowDialog();
+            ClsCost lcCost = ClsCost.NewCost(CboCostType.SelectedIndex);
+            if (lcCost != null && lcCost.ViewEdit())
+            {
+                ClsCost.CostList.Add(lcCost.Name, lcCost);
+                UpdateDisplay();
+            }
+
         }
 
         private void BtnAddVehicle_Click(object sender, EventArgs e)
@@ -67,6 +73,10 @@ namespace Assignment_Two
             DialogResult = DialogResult.Cancel;
         }
 
-        
+        private void UpdateDisplay()
+        {
+            LstItems.DataSource = null;
+            LstItems.DataSource = ClsCost.CostList.Values.ToList();
+        }
     }
 }
