@@ -10,6 +10,7 @@ namespace Assignment_Two
     {
         private string _Name;
         private decimal _Cost;
+        private string _Role;
         protected ClsCost _CostClass;
         public static readonly string[] _TypeOfCost = { "Staff", "Vehicle", "Other" };
         private static Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
@@ -31,6 +32,12 @@ namespace Assignment_Two
             set { _Cost = value; }
         }
 
+        public string Role
+        {
+            get { return _Role; }
+            set { _Role = value; }
+        }
+
         public abstract bool ViewEdit();
 
         protected abstract string TypeOfCost();
@@ -40,7 +47,7 @@ namespace Assignment_Two
             return _Name + "\t" + _Cost + "\t" + TypeOfCost();
         }
 
-        public abstract decimal CalculateCost();
+        //public abstract decimal CalculateCost();
 
         public static ClsCost NewCost(int prChoice)
         {

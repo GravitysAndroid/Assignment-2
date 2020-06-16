@@ -30,8 +30,8 @@
         {
             this.LblName = new System.Windows.Forms.Label();
             this.LblCost = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.TxtCost = new System.Windows.Forms.TextBox();
             this.BtnOK = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -54,19 +54,19 @@
             this.LblCost.TabIndex = 3;
             this.LblCost.Text = "Cost";
             // 
-            // textBox1
+            // TxtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.TxtName.Location = new System.Drawing.Point(84, 12);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(100, 20);
+            this.TxtName.TabIndex = 4;
             // 
-            // textBox2
+            // TxtCost
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.TxtCost.Location = new System.Drawing.Point(84, 38);
+            this.TxtCost.Name = "TxtCost";
+            this.TxtCost.Size = new System.Drawing.Size(100, 20);
+            this.TxtCost.TabIndex = 5;
             // 
             // BtnOK
             // 
@@ -76,6 +76,7 @@
             this.BtnOK.TabIndex = 6;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // BtnCancel
             // 
@@ -87,18 +88,18 @@
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
-            // FrmNewItem
+            // FrmItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(241, 140);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnOK);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtCost);
+            this.Controls.Add(this.TxtName);
             this.Controls.Add(this.LblCost);
             this.Controls.Add(this.LblName);
-            this.Name = "FrmNewItem";
+            this.Name = "FrmItem";
             this.Text = "New Item";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -108,8 +109,8 @@
         #endregion
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label LblCost;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.TextBox TxtCost;
         private System.Windows.Forms.Button BtnOK;
         private System.Windows.Forms.Button BtnCancel;
     }

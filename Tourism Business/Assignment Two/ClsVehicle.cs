@@ -12,7 +12,6 @@ namespace Assignment_Two
         public override bool ViewEdit()
         {
             return _VehicleForm.ShowDialog(this);
-
         }
 
         public override string ToString()
@@ -20,14 +19,9 @@ namespace Assignment_Two
             return base.ToString();
         }
 
-        public override decimal CalculateCost()
-        {
-            return
-        }
-
         protected override string TypeOfCost()
         {
-            return "Other";
+            return "Vehicle";
         }
     }
 }

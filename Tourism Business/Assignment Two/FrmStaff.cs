@@ -19,17 +19,16 @@ namespace Assignment_Two
 
         protected override void UpdateDisplay()
         {
-            base.UpdateDisplay();
-            ClsStaff lcStaff = (ClsStaff) _CostClass;
-            TxtStaffRole.Text = _StaffRole;
+            //TxtName.Text = _Cost.Name;
+            //TxtCost.Text = Convert.ToString(_Cost.Cost);
+            TxtStaffRole.Text = _Cost.Role;
         }
 
         protected override void PushData()
         {
-            base.PushData();
-            ClsMOEStudent lcStudent = (ClsMOEStudent)_Student;
-            lcStudent.LoanAmount = Convert.ToDecimal(TxtLoan.Text);
-            lcStudent.FullTime = ChkFullTime.Checked;
+            //_Cost.Name = TxtName.Text;
+            //_Cost.Cost = Convert.ToDecimal(TxtCost.Text);
+            _Cost.Role = TxtStaffRole.Text;
         }
     }
 }

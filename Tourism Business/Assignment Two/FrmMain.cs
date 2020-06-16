@@ -63,7 +63,14 @@ namespace Assignment_Two
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             ClsTour lcTour = (ClsTour)LstTours.SelectedValue;
-
+            if (LstTours.SelectedIndex == -1)
+            { //Not Selected Anything
+                MessageBox.Show("Select an item to delete");
+            }
+            else
+            {
+                LstTours.Items.RemoveAt(LstTours.SelectedIndex);
+            }
         }
 
         private void BtnClose_Click(object sender, EventArgs e)

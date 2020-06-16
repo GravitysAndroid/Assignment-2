@@ -16,6 +16,10 @@ namespace Assignment_Two
         private FrmVehicle _FrmVehicle = new FrmVehicle();
         private FrmOther _FrmOther = new FrmOther();
         private ClsCost _Cost;
+        private decimal TotalSum = 0;
+        private decimal lcOther = 0;
+        private decimal lcStaff = 0;
+        private decimal lcVehicle = 0;
 
         public FrmTourItems()
         {
@@ -32,7 +36,6 @@ namespace Assignment_Two
                 ClsCost.CostList.Add(lcCost.Name, lcCost);
                 UpdateDisplay();
             }
-
         }
 
         private void BtnAddVehicle_Click(object sender, EventArgs e)
@@ -53,19 +56,30 @@ namespace Assignment_Two
             }
         }
 
-            private void BtnEdit_Click(object sender, EventArgs e)
+        private void BtnEdit_Click(object sender, EventArgs e)
         {
 
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-
+            if (LstItems.SelectedIndex == -1)
+            { //Not Selected Anything
+                MessageBox.Show("Select an item to delete");
+            }
+            else
+            {
+                LstItems.Items.RemoveAt(LstItems.SelectedIndex);
+            }
         }
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-
+            lcOther = FrmItem.
+            DialogResult = DialogResult.OK;
+            TotalSum = lcOther + lcStaff + lcVehicle;
+            TotalSum = Convert.ToInt32(LblTotal.Text);
+            UpdateDisplay();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

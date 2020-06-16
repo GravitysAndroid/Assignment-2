@@ -12,17 +12,11 @@ namespace Assignment_Two
         public override bool ViewEdit()
         {
             return _OtherForm.ShowDialog(this);
-
         }
 
         public override string ToString()
         {
             return base.ToString();
-        }
-
-        public override decimal CalculateCost()
-        {
-            return
         }
 
         protected override string TypeOfCost()

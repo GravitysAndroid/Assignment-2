@@ -12,14 +12,43 @@ namespace Assignment_Two
 {
     public partial class FrmItem : Form
     {
+        protected ClsCost _Cost;
+        public decimal lcCost = 0;
         public FrmItem()
         {
             InitializeComponent();
         }
 
+        public bool ShowDialog(ClsCost prCost)
+        {
+            _Cost = prCost;
+            UpdateDisplay();
+            return ShowDialog() == DialogResult.OK;
+        }
+
+        protected virtual void UpdateDisplay()
+        {
+            TxtName.Text = _Cost.Name;
+            TxtCost.Text = Convert.ToString(_Cost.Cost);
+        }
+
+        protected virtual void PushData()
+        {
+            _Cost.Name = TxtName.Text;
+            _Cost.Cost = Convert.ToDecimal(TxtCost.Text);
+        }
+
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            _Cost.Name = TxtName.Text;
+            _Cost.Cost = Convert.ToDecimal(TxtCost.Text);
+            lcCost = Convert.ToInt32(TxtCost.Text);
+            DialogResult = DialogResult.OK;
         }
     }
 }
