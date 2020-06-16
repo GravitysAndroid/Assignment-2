@@ -17,13 +17,13 @@ namespace Assignment_Two
         private FrmOther _FrmOther = new FrmOther();
         private ClsCost _Cost;
 
-        private Label label;
+        //private Label label;
 
-        public string LabelText
-        {
-            get { return label.Text; }
-            set { label.Text = value; }
-        }
+        //public string LabelText
+        //{
+        //    get { return label.Text; }
+        //    set { label.Text = value; }
+        //}
 
         public FrmTourItems()
         {
@@ -96,7 +96,7 @@ namespace Assignment_Two
         {
             LstItems.DataSource = null;
             LstItems.DataSource = ClsCost.CostList.Values.ToList();
-            LblTotal.Text = LabelText;
+            //LblTotal.Text = LabelText;
         }
     }
 }

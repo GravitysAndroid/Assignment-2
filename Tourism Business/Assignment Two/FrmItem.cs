@@ -13,11 +13,11 @@ namespace Assignment_Two
     public partial class FrmItem : Form
     {
         protected ClsCost _Cost;
-        private FrmTourItems frmTourItems;
+        //private FrmTourItems frmTourItems;
                        
         public FrmItem()
         {
-            this.frmTourItems = frmTourItems;
+            //this.frmTourItems = frmTourItems;
             InitializeComponent();
         }
 
@@ -49,7 +49,7 @@ namespace Assignment_Two
         {
             _Cost.Name = TxtName.Text;
             _Cost.Cost = Convert.ToDecimal(TxtCost.Text);
-            frmTourItems.LabelText = "Total Cost:" + TxtCost.Text;
+            //frmTourItems.LabelText = "Total Cost:" + TxtCost.Text;
             DialogResult = DialogResult.OK;
         }
     }
