@@ -16,10 +16,14 @@ namespace Assignment_Two
         private FrmVehicle _FrmVehicle = new FrmVehicle();
         private FrmOther _FrmOther = new FrmOther();
         private ClsCost _Cost;
-        private decimal TotalSum = 0;
-        private decimal lcOther = 0;
-        private decimal lcStaff = 0;
-        private decimal lcVehicle = 0;
+
+        private Label label;
+
+        public string LabelText
+        {
+            get { return label.Text; }
+            set { label.Text = value; }
+        }
 
         public FrmTourItems()
         {
@@ -48,7 +52,7 @@ namespace Assignment_Two
             _FrmOther.ShowDialog();
         }
 
-        private void EditTour(ClsCost prCost)
+        private void EditCost(ClsCost prCost)
         {
             if (prCost != null && prCost.ViewEdit())
             {
@@ -58,7 +62,11 @@ namespace Assignment_Two
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-
+            ClsCost lcCost = (ClsCost)LstItems.SelectedItem;
+            if (lcCost != null && lcCost.ViewEdit())
+            {
+                UpdateDisplay();
+            }
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -75,10 +83,7 @@ namespace Assignment_Two
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            lcOther = FrmItem.
             DialogResult = DialogResult.OK;
-            TotalSum = lcOther + lcStaff + lcVehicle;
-            TotalSum = Convert.ToInt32(LblTotal.Text);
             UpdateDisplay();
         }
 
@@ -91,6 +96,7 @@ namespace Assignment_Two
         {
             LstItems.DataSource = null;
             LstItems.DataSource = ClsCost.CostList.Values.ToList();
+            LblTotal.Text = LabelText;
         }
     }
 }

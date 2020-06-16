@@ -20,7 +20,7 @@ namespace Assignment_Two
             get => _TourList; /*set => _TourList = value;*/
         }
 
-        public void Save()
+        public static void Save()
         {
             using (FileStream lcFileStream = new FileStream(fileName, FileMode.Create))
             {
@@ -28,7 +28,7 @@ namespace Assignment_Two
                 lcFormatter.Serialize(lcFileStream, _TourList);
             }
         }
-        public void Retreive()
+        public static void Retreive()
         {
             using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
             {

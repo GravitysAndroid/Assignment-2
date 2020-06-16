@@ -13,9 +13,11 @@ namespace Assignment_Two
     public partial class FrmItem : Form
     {
         protected ClsCost _Cost;
-        public decimal lcCost = 0;
+        private FrmTourItems frmTourItems;
+                       
         public FrmItem()
         {
+            this.frmTourItems = frmTourItems;
             InitializeComponent();
         }
 
@@ -47,7 +49,7 @@ namespace Assignment_Two
         {
             _Cost.Name = TxtName.Text;
             _Cost.Cost = Convert.ToDecimal(TxtCost.Text);
-            lcCost = Convert.ToInt32(TxtCost.Text);
+            frmTourItems.LabelText = "Total Cost:" + TxtCost.Text;
             DialogResult = DialogResult.OK;
         }
     }

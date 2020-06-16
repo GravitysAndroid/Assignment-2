@@ -12,6 +12,7 @@ namespace Assignment_Two
         private decimal _Cost;
         private string _Role;
         protected ClsCost _CostClass;
+        public string _TotalCost;
         public static readonly string[] _TypeOfCost = { "Staff", "Vehicle", "Other" };
         private static Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
 

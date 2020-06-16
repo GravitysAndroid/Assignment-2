@@ -40,7 +40,7 @@ namespace Assignment_Two
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            if (ClsCompanyData.TourList.ContainsKey(TxtCode.Text))
+            if (ClsCompanyData.TourList.ContainsKey(TxtCode.Text) && (TxtCode.Enabled = string.IsNullOrEmpty(_Tour.Code)))
                 MessageBox.Show("Code already in use");
             else
             {

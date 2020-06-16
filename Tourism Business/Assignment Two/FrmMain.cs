@@ -18,7 +18,7 @@ namespace Assignment_Two
         {
             try
             {
-                //ClsCompanyData.Retreive();
+                ClsCompanyData.Retreive();
             }
 
             catch (Exception ex)
@@ -77,7 +77,7 @@ namespace Assignment_Two
         {
             try
             {
-                //ClsCompanyData.Save();
+                ClsCompanyData.Save();
                 DialogResult = DialogResult.Cancel;
                 Close();
             }
