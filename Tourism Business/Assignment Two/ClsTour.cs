@@ -16,6 +16,9 @@ namespace Assignment_Two
         private static FrmTour _TourForm = new FrmTour();
         private ClsTour _Tour;
         private System.Collections.Generic.List<ClsCost> ClsCost;
+        private FrmItem frmItem;
+        public decimal TotalSum = FrmItem.CostLabel;
+        
 
         public static Dictionary<string, ClsTour> TourList
         {
@@ -85,13 +88,5 @@ namespace Assignment_Two
         {
             return _code + "\t" + _name + "\t" + _startDate.ToShortDateString() + "\t" + _maxPax + "\t\t" + _distance;
         }
-
-        //public Decimal CalculateTourCost()
-        //{
-        //    decimal lcTourTotal = 0;
-        //    foreach (ClsTour lcCost in TourList.Values)
-        //        lcTotal += lcCost.Balance;
-        //    return lcTourTotal;
-        //}
     }
 }

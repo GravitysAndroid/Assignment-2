@@ -16,14 +16,7 @@ namespace Assignment_Two
         private FrmVehicle _FrmVehicle = new FrmVehicle();
         private FrmOther _FrmOther = new FrmOther();
         private ClsCost _Cost;
-
-        //private Label label;
-
-        //public string LabelText
-        //{
-        //    get { return label.Text; }
-        //    set { label.Text = value; }
-        //}
+        private decimal lcTempSum;
 
         public FrmTourItems()
         {
@@ -94,9 +87,11 @@ namespace Assignment_Two
 
         private void UpdateDisplay()
         {
+            ClsTour Costing = new ClsTour();
             LstItems.DataSource = null;
             LstItems.DataSource = ClsCost.CostList.Values.ToList();
-            //LblTotal.Text = LabelText;
+            LblTotal.Text = "Total Cost: " + (lcTempSum + Costing.TotalSum);
+            lcTempSum = Costing.TotalSum;
         }
     }
 }
