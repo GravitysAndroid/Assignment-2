@@ -39,6 +39,7 @@
             this.BtnOK = new System.Windows.Forms.Button();
             this.LblTotal = new System.Windows.Forms.Label();
             this.CboCostType = new System.Windows.Forms.ComboBox();
+            this.LblITotalItemCost = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstItems
@@ -129,7 +130,7 @@
             // LblTotal
             // 
             this.LblTotal.AutoSize = true;
-            this.LblTotal.Location = new System.Drawing.Point(186, 243);
+            this.LblTotal.Location = new System.Drawing.Point(194, 243);
             this.LblTotal.Name = "LblTotal";
             this.LblTotal.Size = new System.Drawing.Size(86, 13);
             this.LblTotal.TabIndex = 9;
@@ -143,11 +144,20 @@
             this.CboCostType.Size = new System.Drawing.Size(121, 21);
             this.CboCostType.TabIndex = 10;
             // 
+            // LblITotalItemCost
+            // 
+            this.LblITotalItemCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LblITotalItemCost.Location = new System.Drawing.Point(286, 240);
+            this.LblITotalItemCost.Name = "LblITotalItemCost";
+            this.LblITotalItemCost.Size = new System.Drawing.Size(75, 23);
+            this.LblITotalItemCost.TabIndex = 11;
+            // 
             // FrmTourItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 331);
+            this.Controls.Add(this.LblITotalItemCost);
             this.Controls.Add(this.CboCostType);
             this.Controls.Add(this.LblTotal);
             this.Controls.Add(this.BtnOK);
@@ -179,5 +189,6 @@
         private System.Windows.Forms.Button BtnOK;
         private System.Windows.Forms.Label LblTotal;
         private System.Windows.Forms.ComboBox CboCostType;
+        private System.Windows.Forms.Label LblITotalItemCost;
     }
 }

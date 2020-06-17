@@ -15,8 +15,8 @@ namespace Assignment_Two
         private FrmStaff _FrmStaff = new FrmStaff();
         private FrmVehicle _FrmVehicle = new FrmVehicle();
         private FrmOther _FrmOther = new FrmOther();
-        private ClsCost _Cost;
-        private decimal lcTempSum;
+        private ClsTour _Tour;
+        //private decimal lcTempSum;
 
         public FrmTourItems()
         {
@@ -30,7 +30,7 @@ namespace Assignment_Two
             ClsCost lcCost = ClsCost.NewCost(CboCostType.SelectedIndex);
             if (lcCost != null && lcCost.ViewEdit())
             {
-                ClsCost.CostList.Add(lcCost.Name, lcCost);
+                _Tour.CostList.Add(lcCost);
                 UpdateDisplay();
             }
         }
@@ -49,7 +49,7 @@ namespace Assignment_Two
         {
             if (prCost != null && prCost.ViewEdit())
             {
-                _Cost = prCost;
+                UpdateDisplay();
             }
         }
 
@@ -85,13 +85,20 @@ namespace Assignment_Two
             DialogResult = DialogResult.Cancel;
         }
 
+        public bool ShowDialog(ClsTour prTour)
+        {
+            _Tour = prTour;
+            UpdateDisplay();
+            return ShowDialog() == DialogResult.OK;
+        }
+
         private void UpdateDisplay()
         {
-            ClsTour Costing = new ClsTour();
+            //ClsTour Costing = new ClsTour();
             LstItems.DataSource = null;
-            LstItems.DataSource = ClsCost.CostList.Values.ToList();
-            LblTotal.Text = "Total Cost: " + (lcTempSum + Costing.TotalSum);
-            lcTempSum = Costing.TotalSum;
+            LstItems.DataSource = _Tour.CostList;
+            //LblTotal.Text = "Total Cost: " + (lcTempSum + _Tour.TotalSum);
+            //lcTempSum = Costing.TotalSum;
         }
     }
 }

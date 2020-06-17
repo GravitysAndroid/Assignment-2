@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Assignment_Two
 {
+    [Serializable]
     public abstract class ClsCost
     {
         private string _Name;
         private decimal _Cost;
-        private string _Role;
-        protected ClsCost _CostClass;
-        public string _TotalCost;
+        //protected ClsCost _CostClass;
+        //public string _TotalCost;
         public static readonly string[] _TypeOfCost = { "Staff", "Vehicle", "Other" };
-        private static Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
+        private Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
 
-        public static Dictionary<string, ClsCost> CostList
+        public Dictionary<string, ClsCost> CostList
         {
             get => _CostList;
         }
@@ -33,11 +33,7 @@ namespace Assignment_Two
             set { _Cost = value; }
         }
 
-        public string Role
-        {
-            get { return _Role; }
-            set { _Role = value; }
-        }
+        public abstract decimal CalculatedCost();
 
         public abstract bool ViewEdit();
 
@@ -47,8 +43,6 @@ namespace Assignment_Two
         {
             return _Name + "\t" + _Cost + "\t" + TypeOfCost();
         }
-
-        //public abstract decimal CalculateCost();
 
         public static ClsCost NewCost(int prChoice)
         {

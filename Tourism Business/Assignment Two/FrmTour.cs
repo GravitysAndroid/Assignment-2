@@ -38,19 +38,24 @@ namespace Assignment_Two
             NumMarkUp.Value = _Tour.MarkUp;
         }
 
+        private void PushData()
+        {
+            _Tour.Code = TxtCode.Text;
+            _Tour.Name = TxtName.Text;
+            _Tour.Distance = Convert.ToInt32(NumDistance.Value);
+            _Tour.EndDate = DtpEnd.Value;
+            _Tour.StartDate = DtpStart.Value;
+            _Tour.MaxPax = Convert.ToInt32(NumPassMax.Value);
+            _Tour.MarkUp = Convert.ToInt32(NumMarkUp.Value);
+        }
+
         private void BtnOK_Click(object sender, EventArgs e)
         {
             if (ClsCompanyData.TourList.ContainsKey(TxtCode.Text) && (TxtCode.Enabled = string.IsNullOrEmpty(_Tour.Code)))
                 MessageBox.Show("Code already in use");
             else
             {
-                _Tour.Code = TxtCode.Text;
-                _Tour.Name = TxtName.Text;
-                _Tour.Distance = Convert.ToInt32(NumDistance.Value);
-                _Tour.EndDate = DtpEnd.Value;
-                _Tour.StartDate = DtpStart.Value;
-                _Tour.MaxPax = Convert.ToInt32(NumPassMax.Value);
-                _Tour.MarkUp = Convert.ToInt32(NumMarkUp.Value);
+                PushData();
                 DialogResult = DialogResult.OK;
             }
         }
@@ -58,7 +63,8 @@ namespace Assignment_Two
         private void BtnItems_Click(object sender, EventArgs e)
         {
             //FrmTourItem _FrmTourItems = new FrmTourItems();
-            _FrmTourItems.ShowDialog();
+            PushData();
+            _FrmTourItems.ShowDialog(_Tour);
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

@@ -12,6 +12,8 @@ namespace Assignment_Two
 {
     public partial class FrmStaff : FrmItem
     {
+        public string Role;
+
         public FrmStaff()
         {
             InitializeComponent();
@@ -19,16 +21,18 @@ namespace Assignment_Two
 
         protected override void UpdateDisplay()
         {
+            base.UpdateDisplay();
             //TxtName.Text = _Cost.Name;
             //TxtCost.Text = Convert.ToString(_Cost.Cost);
-            TxtStaffRole.Text = _Cost.Role;
+            TxtStaffRole.Text = (_Cost as ClsStaff).Role;
         }
 
         protected override void PushData()
         {
+            base.PushData();
             //_Cost.Name = TxtName.Text;
             //_Cost.Cost = Convert.ToDecimal(TxtCost.Text);
-            _Cost.Role = TxtStaffRole.Text;
+            (_Cost as ClsStaff).Role = TxtStaffRole.Text;
         }
     }
 }

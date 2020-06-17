@@ -14,6 +14,7 @@ namespace Assignment_Two
     {
         private ClsTour _Tour;
         private FrmTour _FrmNewTour = new FrmTour();
+
         public FrmMain()
         {
             try
