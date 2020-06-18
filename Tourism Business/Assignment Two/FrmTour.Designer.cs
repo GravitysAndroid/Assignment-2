@@ -175,9 +175,19 @@
             // NumDistance
             // 
             this.NumDistance.Location = new System.Drawing.Point(130, 143);
+            this.NumDistance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NumDistance.Name = "NumDistance";
             this.NumDistance.Size = new System.Drawing.Size(100, 20);
             this.NumDistance.TabIndex = 18;
+            this.NumDistance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // NumMarkUp
             // 
@@ -185,6 +195,11 @@
             this.NumMarkUp.Name = "NumMarkUp";
             this.NumMarkUp.Size = new System.Drawing.Size(100, 20);
             this.NumMarkUp.TabIndex = 19;
+            this.NumMarkUp.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // lblName
             // 

@@ -13,7 +13,7 @@ namespace Assignment_Two
     public partial class FrmMain : Form
     {
         private ClsTour _Tour;
-        private FrmTour _FrmNewTour = new FrmTour();
+        private static FrmTour _FrmNewTour = new FrmTour();
 
         public FrmMain()
         {
@@ -90,7 +90,6 @@ namespace Assignment_Two
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            ClsCompanyData.Retreive();
             UpdateDisplay();
         }
     }

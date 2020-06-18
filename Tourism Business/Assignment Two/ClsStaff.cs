@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Assignment_Two
 {
@@ -35,7 +37,9 @@ namespace Assignment_Two
 
         public override decimal CalculatedCost()
         {
-            return _Cost * (((_Tour.EndDate.Date - _Tour.StartDate.Date).Days) + 1);
+            //decimal lcPercent = (_Tour.MarkUp / 100) + 1;
+            return (_Cost * (((_Tour.EndDate.Date - _Tour.StartDate.Date).Days) + 1));
+            //return (_Cost * (((_Tour.EndDate.Date - _Tour.StartDate.Date).Days) + 1)) * (lcPercent);
         }
     }
 }

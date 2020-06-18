@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Assignment_Two
 {
@@ -29,11 +30,9 @@ namespace Assignment_Two
 
         public override decimal CalculatedCost()
         {
-            //decimal lcTotal = 0;
-            //foreach (clsTour lcTour in _TypeOfCost)
-            //    lcTotal += lcTour.TotalSum;
-            //return Cost;
-            return _Cost * _Tour.Distance;
+            //decimal lcPercent = (_Tour.MarkUp / 100) + 1;
+            return (_Cost * _Tour.Distance);
+            //return (_Cost * _Tour.Distance) * (lcPercent + 1);
         }
     }
 }

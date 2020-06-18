@@ -28,7 +28,9 @@ namespace Assignment_Two
 
         public override decimal CalculatedCost()
         {
+            //decimal lcPercent = (_Tour.MarkUp / 100) + 1;
             return Cost;
+            //return Cost * lcPercent;
         }
     }
 }

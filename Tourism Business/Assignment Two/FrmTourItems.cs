@@ -12,11 +12,10 @@ namespace Assignment_Two
 {
     public partial class FrmTourItems : Form
     {
-        private FrmStaff _FrmStaff = new FrmStaff();
-        private FrmVehicle _FrmVehicle = new FrmVehicle();
-        private FrmOther _FrmOther = new FrmOther();
+        private static FrmStaff _FrmStaff = new FrmStaff();
+        private static FrmVehicle _FrmVehicle = new FrmVehicle();
+        private static FrmOther _FrmOther = new FrmOther();
         private ClsTour _Tour;
-        //private decimal lcTempSum;
 
         public FrmTourItems()
         {
@@ -94,11 +93,8 @@ namespace Assignment_Two
 
         private void UpdateDisplay()
         {
-            //ClsTour Costing = new ClsTour();
             LstItems.DataSource = null;
             LstItems.DataSource = _Tour.CostList;
-            //LblTotal.Text = "Total Cost: " + (lcTempSum + _Tour.TotalSum);
-            //lcTempSum = Costing.TotalSum;
             LblITotalItemCost.Text = _Tour.CalcTotalCost().ToString("C");
         }
     }

@@ -31,14 +31,12 @@ namespace Assignment_Two
         {
             TxtName.Text = _Cost.Name;
             TxtCost.Text = Convert.ToString(_Cost.Cost);
-            //_staffRole.TxtStaffRole.Text = _Cost.Role;
         }
 
         protected virtual void PushData()
         {
             _Cost.Name = TxtName.Text;
             _Cost.Cost = Convert.ToDecimal(TxtCost.Text);
-            //_Cost.Role = TxtStaffRole.Text;
         }
         
         private void BtnCancel_Click(object sender, EventArgs e)
@@ -48,11 +46,9 @@ namespace Assignment_Two
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            //_Cost.Name = TxtName.Text;
-            //_Cost.Cost = Convert.ToDecimal(TxtCost.Text);
-            //CostLabel = Convert.ToDecimal(TxtCost.Text);
             PushData();
             DialogResult = DialogResult.OK;
+
         }
     }
 }
