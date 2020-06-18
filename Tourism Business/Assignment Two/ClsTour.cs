@@ -12,7 +12,7 @@ namespace Assignment_Two
     [Serializable]
     public class ClsTour
     {
-        private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
+        //private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
         private static FrmTour _TourForm = new FrmTour();
         private System.Collections.Generic.List<ClsCost> _CostList = new List<ClsCost>();
         private FrmItem frmItem;
@@ -87,6 +87,14 @@ namespace Assignment_Two
         public override String ToString()
         {
             return _code + "\t" + _name + "\t" + _startDate.ToShortDateString() + "\t" + _maxPax + "\t\t" + _distance;
+        }
+
+        public decimal CalcTotalCost()
+        {
+            decimal lcTotal = 0;
+            foreach (ClsCost lcCost in CostList)
+                lcTotal += lcCost.CalculatedCost();
+            return lcTotal;
         }
     }
 }

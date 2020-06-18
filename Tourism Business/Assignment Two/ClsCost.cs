@@ -10,11 +10,10 @@ namespace Assignment_Two
     public abstract class ClsCost
     {
         private string _Name;
-        private decimal _Cost;
-        //protected ClsCost _CostClass;
-        //public string _TotalCost;
+        protected decimal _Cost;
         public static readonly string[] _TypeOfCost = { "Staff", "Vehicle", "Other" };
         private Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
+        protected ClsTour _Tour;
 
         public Dictionary<string, ClsCost> CostList
         {
@@ -41,17 +40,17 @@ namespace Assignment_Two
 
         public override string ToString()
         {
-            return _Name + "\t" + _Cost + "\t" + TypeOfCost();
+            return _Name + "\t"  + TypeOfCost() + "\t" + _Cost + "\t" + CalculatedCost();
         }
 
-        public static ClsCost NewCost(int prChoice)
+        public static ClsCost NewCost(int prChoice, ClsTour prTour)
         {
             if (prChoice == 0)
-                return new ClsStaff();
+                return new ClsStaff() { _Tour = prTour};
             else if (prChoice == 1)
-                return new ClsVehicle();
+                return new ClsVehicle() { _Tour = prTour };
             else
-                return new ClsOther();
+                return new ClsOther() { _Tour = prTour };
         }
     }
 }

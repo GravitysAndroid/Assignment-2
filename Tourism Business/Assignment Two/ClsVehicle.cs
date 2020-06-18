@@ -10,6 +10,7 @@ namespace Assignment_Two
     class ClsVehicle : ClsCost
     {
         private static FrmVehicle _VehicleForm = new FrmVehicle();
+        private ClsTour clsTour;
 
         public override bool ViewEdit()
         {
@@ -26,17 +27,13 @@ namespace Assignment_Two
             return "Vehicle";
         }
 
-        //public static decimal TotalBalance()
-        //{
-        //    decimal lcTotal = 0;
-        //    foreach (ClsCost lcStudent in _CostList)
-        //        lcTotal += lcStudent.Balance;
-        //    return lcTotal;
-        //}
-
         public override decimal CalculatedCost()
         {
-            throw new NotImplementedException();
+            //decimal lcTotal = 0;
+            //foreach (clsTour lcTour in _TypeOfCost)
+            //    lcTotal += lcTour.TotalSum;
+            //return Cost;
+            return _Cost * _Tour.Distance;
         }
     }
 }

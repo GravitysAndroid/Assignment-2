@@ -27,7 +27,7 @@ namespace Assignment_Two
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            ClsCost lcCost = ClsCost.NewCost(CboCostType.SelectedIndex);
+            ClsCost lcCost = ClsCost.NewCost(CboCostType.SelectedIndex, _Tour);
             if (lcCost != null && lcCost.ViewEdit())
             {
                 _Tour.CostList.Add(lcCost);
@@ -99,6 +99,7 @@ namespace Assignment_Two
             LstItems.DataSource = _Tour.CostList;
             //LblTotal.Text = "Total Cost: " + (lcTempSum + _Tour.TotalSum);
             //lcTempSum = Costing.TotalSum;
+            LblITotalItemCost.Text = _Tour.CalcTotalCost().ToString("C");
         }
     }
 }

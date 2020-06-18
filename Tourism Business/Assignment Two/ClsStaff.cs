@@ -33,17 +33,9 @@ namespace Assignment_Two
             return "Staff";
         }
 
-        //public static decimal TotalBalance()
-        //{
-        //    decimal lcTotal = 0;
-        //    foreach (ClsCost lcStudent in _CostList)
-        //        lcTotal += lcStudent.Balance;
-        //    return lcTotal;
-        //}
-
         public override decimal CalculatedCost()
         {
-            throw new NotImplementedException();
+            return _Cost * (((_Tour.EndDate.Date - _Tour.StartDate.Date).Days) + 1);
         }
     }
 }

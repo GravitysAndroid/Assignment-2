@@ -40,6 +40,7 @@
             this.LblTotal = new System.Windows.Forms.Label();
             this.CboCostType = new System.Windows.Forms.ComboBox();
             this.LblITotalItemCost = new System.Windows.Forms.Label();
+            this.LblContribution = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstItems
@@ -62,7 +63,7 @@
             // LblType
             // 
             this.LblType.AutoSize = true;
-            this.LblType.Location = new System.Drawing.Point(149, 9);
+            this.LblType.Location = new System.Drawing.Point(65, 9);
             this.LblType.Name = "LblType";
             this.LblType.Size = new System.Drawing.Size(31, 13);
             this.LblType.TabIndex = 2;
@@ -71,7 +72,7 @@
             // LblCost
             // 
             this.LblCost.AutoSize = true;
-            this.LblCost.Location = new System.Drawing.Point(90, 9);
+            this.LblCost.Location = new System.Drawing.Point(111, 9);
             this.LblCost.Name = "LblCost";
             this.LblCost.Size = new System.Drawing.Size(28, 13);
             this.LblCost.TabIndex = 3;
@@ -152,11 +153,21 @@
             this.LblITotalItemCost.Size = new System.Drawing.Size(75, 23);
             this.LblITotalItemCost.TabIndex = 11;
             // 
+            // LblContribution
+            // 
+            this.LblContribution.AutoSize = true;
+            this.LblContribution.Location = new System.Drawing.Point(146, 9);
+            this.LblContribution.Name = "LblContribution";
+            this.LblContribution.Size = new System.Drawing.Size(102, 13);
+            this.LblContribution.TabIndex = 12;
+            this.LblContribution.Text = "Contribution Cost ($)";
+            // 
             // FrmTourItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 331);
+            this.Controls.Add(this.LblContribution);
             this.Controls.Add(this.LblITotalItemCost);
             this.Controls.Add(this.CboCostType);
             this.Controls.Add(this.LblTotal);
@@ -190,5 +201,6 @@
         private System.Windows.Forms.Label LblTotal;
         private System.Windows.Forms.ComboBox CboCostType;
         private System.Windows.Forms.Label LblITotalItemCost;
+        private System.Windows.Forms.Label LblContribution;
     }
 }
