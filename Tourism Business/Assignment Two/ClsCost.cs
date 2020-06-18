@@ -12,10 +12,10 @@ namespace Assignment_Two
         private string _Name;
         protected decimal _Cost;
         public static readonly string[] _TypeOfCost = { "Staff", "Vehicle", "Other" };
-        private Dictionary<string, ClsCost> _CostList = new Dictionary<string, ClsCost>();
+        private List<ClsCost> _CostList = new List<ClsCost>();
         protected ClsTour _Tour;
 
-        public Dictionary<string, ClsCost> CostList
+        public List<ClsCost> CostList
         {
             get => _CostList;
         }

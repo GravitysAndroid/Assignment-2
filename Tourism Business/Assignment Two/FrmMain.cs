@@ -90,6 +90,7 @@ namespace Assignment_Two
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            ClsCompanyData.Retreive();
             UpdateDisplay();
         }
     }

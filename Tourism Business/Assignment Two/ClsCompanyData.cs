@@ -11,13 +11,12 @@ namespace Assignment_Two
     [Serializable]
     public class ClsCompanyData
     {
-        private static string fileName = "BusinessStorage";
+        private static string fileName = "TourStorage";
         private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
-
-
+                
         public static Dictionary<string, ClsTour> TourList
         {
-            get => _TourList; /*set => _TourList = value;*/
+            get => _TourList;
         }
 
         public static void Save()
@@ -28,6 +27,7 @@ namespace Assignment_Two
                 lcFormatter.Serialize(lcFileStream, _TourList);
             }
         }
+   
         public static void Retreive()
         {
             using (FileStream lcFileStream = new FileStream(fileName, FileMode.Open))
@@ -36,5 +36,5 @@ namespace Assignment_Two
                 _TourList = (Dictionary<string, ClsTour>)lcFormatter.Deserialize(lcFileStream);
             }
         }
-    }
+    }  
 }

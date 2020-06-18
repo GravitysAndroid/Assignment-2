@@ -12,18 +12,17 @@ namespace Assignment_Two
     [Serializable]
     public class ClsTour
     {
-        //private static Dictionary<string, ClsTour> _TourList = new Dictionary<string, ClsTour>();
         private static FrmTour _TourForm = new FrmTour();
         private System.Collections.Generic.List<ClsCost> _CostList = new List<ClsCost>();
         private FrmItem frmItem;
         public decimal TotalSum = FrmItem.CostLabel;
-       
-        //public static Dictionary<string, ClsTour> TourList
-        //{
-        //    get => _TourList; /*set => _TourList = value;*/
-        //}
-
         private String _code;
+
+        public List<ClsCost> CostList 
+        { 
+            get => _CostList; 
+        }
+
         public String Code
         {
             get { return _code; }
@@ -71,8 +70,6 @@ namespace Assignment_Two
             get { return _markUp; }
             set { _markUp = value; }
         }
-
-        public List<ClsCost> CostList { get => _CostList; }
 
         public static ClsTour NewTour()
         {
