@@ -14,7 +14,6 @@ namespace Assignment_Two
     {
         private static FrmTour _TourForm = new FrmTour();
         private System.Collections.Generic.List<ClsCost> _CostList = new List<ClsCost>();
-        private FrmItem frmItem;
         public decimal TotalSum = FrmItem.CostLabel;
         private String _code;
 

@@ -24,7 +24,7 @@ namespace Assignment_Two
 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.GetBaseException().Message);
+                MessageBox.Show(ex.Message);
             }
             InitializeComponent();
         }
